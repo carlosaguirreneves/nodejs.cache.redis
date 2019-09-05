@@ -1,15 +1,11 @@
-# Redis para Cache
-Projeto utilizado para instalar o Redis como um serviço.
-
-## Utilizando Redis com Node
-
-O arquivo cache-redis foi implementado para realizar conexão com o serviço Redis. Essa implementação pode servir de base para uso em qualquer projeto Node. Segue abaixo um exemplo de como usar.
+# Cache em NodeJs usando Redis
+Projeto utilizado para instalar Redis como um serviço compartilhado usando container docker . O arquivo cache-redis realiza conexão com o serviço Redis e expoe alguns métodos úteis para fazer cache de dados. Essa implementação pode servir de base para uso em qualquer projeto NodeJs. Segue abaixo um exemplo de como usar.
 
 ```
 const cache = require('./cache-redis')
 
 await cache.connectRedis('conectavoos.com', {
-    host: '172.25.0.23',
+    host: 'redis',
     port: 6379
 })
 
