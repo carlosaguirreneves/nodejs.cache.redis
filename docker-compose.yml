@@ -1,0 +1,16 @@
+#########################################
+# docker-compose para Redis             #
+#                                       #
+# @author: Carlos Aguirre Neves         #
+#########################################
+
+version: '2'
+services:
+  redis:
+    image: redis:4.0
+    container_name: redis-service
+    restart: always
+    volumes:
+      - /redisdata:/data
+    ports:
+      - 6379:6379

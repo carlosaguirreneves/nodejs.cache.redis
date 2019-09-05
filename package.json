@@ -1,0 +1,15 @@
+{
+  "name": "redis-service",
+  "version": "1.0.0",
+  "description": "Adiciona dados em cache utilizando o serviço Redis.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main"
+  },
+  "keywords": [],
+  "author": "Carlos Aguirre Neves",
+  "license": "ISC",
+  "dependencies": {
+    "redis": "^2.8.0"
+  }
+}
